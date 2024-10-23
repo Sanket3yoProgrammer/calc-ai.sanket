@@ -1,0 +1,20 @@
+/* index.module.css */
+.rangeInput {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
