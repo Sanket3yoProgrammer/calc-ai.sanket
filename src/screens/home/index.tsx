@@ -142,10 +142,10 @@ export default function Home() {
         const canvas = canvasRef.current;
     
         if (canvas) {
-            console.log('Sending data...', `${import.meta.env.VITE_API_URL}/calculate`);
+            console.log('Sending data...', `https://calc-backend-sanketpresents-3.onrender.com/calculate`);
             const response = await axios({
                 method: 'post',
-                url: `${import.meta.env.VITE_API_URL}/calculate`,
+                url: `https://calc-backend-sanketpresents-3.onrender.com/calculate`,
                 data: {
                     image: canvas.toDataURL('image/png'),
                     dict_of_vars: dictOfVars
